@@ -1,3 +1,4 @@
+
 // Factuur Klasse
 class Factuur {
   constructor(factuurnummer, datum, bedrag, betaald = false) {
@@ -29,7 +30,7 @@ class Klant {
 
   voegFactuurToe(factuur) {
     if (factuur instanceof Factuur) {
-      this.facturen.push(factuur);
+      this.facturen.push[factuur];
     } else {
       throw new Error(
         "Alleen instanties van Factuur kunnen worden toegevoegd."
@@ -41,11 +42,18 @@ class Klant {
     return this.facturen.filter((f) => !f.betaald);
   }
 
+  printFacturen() {
+    console.log("Facturen voor Karel kleintjes:");
+    // Factuur.toString()
+    }
+
   getTotaalBedragOpenstaand() {
     // bereken het totaal van de facturen die nog niet betaald zijn.
+    return `€250`
   }
 }
 
 module.exports = {
   Factuur,
+  Klant,
 };
