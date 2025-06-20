@@ -45,3 +45,8 @@ klanten.forEach((klant) => {
 })
 
 // 2. Alle betaalde facturen van de klanten verschijnen van de gekozen klant
+if (facturenData.betaald == false) {
+  
+} 
+
+
